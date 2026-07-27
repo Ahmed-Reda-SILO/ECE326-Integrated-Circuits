@@ -1,0 +1,73 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081B33"/>
+      <stop offset="55%" stop-color="#0F3B66"/>
+      <stop offset="100%" stop-color="#0B6E69"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#54D2C2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1180" cy="70" r="180" fill="#FFFFFF" opacity="0.035"/>
+  <circle cx="1260" cy="330" r="240" fill="#FFFFFF" opacity="0.025"/>
+
+  <!-- Stylized IC -->
+  <g transform="translate(1015,92)">
+    <rect x="0" y="0" width="235" height="235" rx="22" fill="#0A1830" stroke="#79D7CC" stroke-width="4"/>
+    <rect x="34" y="34" width="167" height="167" rx="14" fill="#102A46" stroke="#58A6FF" stroke-width="3"/>
+    <g stroke="#79D7CC" stroke-width="7" stroke-linecap="round">
+      <line x1="-28" y1="36" x2="0" y2="36"/><line x1="-28" y1="82" x2="0" y2="82"/>
+      <line x1="-28" y1="128" x2="0" y2="128"/><line x1="-28" y1="174" x2="0" y2="174"/>
+      <line x1="-28" y1="220" x2="0" y2="220"/>
+      <line x1="235" y1="36" x2="263" y2="36"/><line x1="235" y1="82" x2="263" y2="82"/>
+      <line x1="235" y1="128" x2="263" y2="128"/><line x1="235" y1="174" x2="263" y2="174"/>
+      <line x1="235" y1="220" x2="263" y2="220"/>
+      <line x1="36" y1="-28" x2="36" y2="0"/><line x1="82" y1="-28" x2="82" y2="0"/>
+      <line x1="128" y1="-28" x2="128" y2="0"/><line x1="174" y1="-28" x2="174" y2="0"/>
+      <line x1="220" y1="-28" x2="220" y2="0"/>
+      <line x1="36" y1="235" x2="36" y2="263"/><line x1="82" y1="235" x2="82" y2="263"/>
+      <line x1="128" y1="235" x2="128" y2="263"/><line x1="174" y1="235" x2="174" y2="263"/>
+      <line x1="220" y1="235" x2="220" y2="263"/>
+    </g>
+
+    <!-- Circuit traces -->
+    <g fill="none" stroke="url(#line)" stroke-width="5" filter="url(#glow)">
+      <path d="M55 70 H95 V110 H135"/>
+      <path d="M55 165 H105 V135 H165"/>
+      <path d="M110 55 V85 H180"/>
+      <path d="M165 180 H120 V155 H80"/>
+    </g>
+    <g fill="#79D7CC">
+      <circle cx="55" cy="70" r="7"/><circle cx="135" cy="110" r="7"/>
+      <circle cx="55" cy="165" r="7"/><circle cx="165" cy="135" r="7"/>
+      <circle cx="110" cy="55" r="7"/><circle cx="180" cy="85" r="7"/>
+      <circle cx="165" cy="180" r="7"/><circle cx="80" cy="155" r="7"/>
+    </g>
+  </g>
+
+  <text x="90" y="118" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#79D7CC" letter-spacing="3">
+    ECE326
+  </text>
+  <text x="90" y="192" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" fill="#FFFFFF">
+    Integrated Circuits
+  </text>
+  <text x="94" y="248" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#DCEBFA">
+    CMOS Digital Design • Processing Technology • Physical Layout
+  </text>
+
+  <rect x="90" y="295" width="520" height="54" rx="27" fill="#FFFFFF" opacity="0.10"/>
+  <text x="120" y="331" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#FFFFFF">
+    15 Lectures  •  499 Slides  •  Complete Course Repository
+  </text>
+</svg>
